@@ -24,35 +24,63 @@
     font-style: normal;
 }
 
-  /*section indexx*/
+  /*section index*/
   body {
     font-family: 'Raleway';
     font-size: 20px;
-    color: seashell;
     text-align: center;
     margin: auto;
     width: 100%;
-    background-image: url("fondre.png");
+    background-color: rgba(220, 217, 233, 0.637);
     background-position: center;
     background-size: cover;
   }
-  header {
+
+  .flex-container {
     width: 100%;
      height: 69px;
-     background-color: #114778;
-     border-bottom: 1px solid seashell;
-     align-items: center;
+     background-color: #ffffff;
      position: fixed;
      z-index: 1; 
-     justify-content: space-evenly ;
      display: flex;
+     flex-wrap: wrap;
+    
   }
-  input[type=text], [type=search] {
-    width: 50%;
+  
+header img {
+ height: 50px;
+ padding-top: 7px;
+
+}
+.barre-d-r {
+  width: 25rem;
+  height: auto;
+  flex-grow: 1;
+  margin: auto;
+    
+}
+  .navbar {
+    flex-wrap: wrap;
+    margin: 0 15px;
+}
+
+
+.navbar ul li{
+  list-style: none;
+  display: inline-block;
+  margin: 18px 15px;
+  color: rgb(19, 3, 3);
+  font-family:'calendas_plusregular' ;
+  font-weight: smaller;
+  border-bottom:3px solid #4752f365;
+}
+  
+ input[type=text] {
+    width: 70%;
     height: 40px;
     box-sizing: border-box;
-    border-bottom:7px solid #4753f3;
-    border-top:2px solid #13a8a7;
+    border-bottom:7px solid #4752f365;
+    border-top:2px solid rgb(19, 3, 3);
     border-radius: 50px;
     font-size: 16px;
     background-color: rgb(255, 255, 255);
@@ -60,50 +88,20 @@
     padding: 10px 20px 5px 20px;
     
   }
-
-header img {
- padding-left: 10px;
- height: 50px;
-}
-.barre-d-r {
-  flex-grow: 1;
-  align-items: center;
-  padding-bottom: 10px;
-}
-ul li  {
-  color: #114778;
-   height: 35px;
-   padding: 0 15px;
-   margin: auto;
-   font-size: large;
-   text-align: center;
-   text-shadow: 1px 1px 1px rgb(18, 169, 214);
-   border-radius: 50px;
-   background-color:white;
-   border-bottom:7px solid #4753f3;
-   border-top:2px solid #13a8a7;
-   list-style: none;
- }
- li:hover {
-    background-color: #a9d9fc;
-  }
-  nav {
-    text-align: right;
-  }
-  nav span  {
-    display: inline-block;
-    padding: 20px 10px;
-  }
-  .flex-container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin: auto;
-    width: 100%;
-
+  [type=search] {
+    width: 50%;
+    height: 40px;
+    box-sizing: border-box;
+    border-bottom:3px solid #4752f365;
+    border-top:2px solid rgb(19, 3, 3);
+    border-radius: 50px;
+    font-size: 16px;
+    background-color: rgb(255, 255, 255);
+    background-repeat: no-repeat;
+    padding: 10px 20px 5px 20px;
     
   }
-  #main {
+  #main_princ {
    width: 100%;
    padding-top: 100px;
   }
@@ -121,40 +119,31 @@ ul li  {
     
   }
   .cont-item img {
-    width: 500px;
-    height: 400px;
+    width: 400px;
+    height: 300px;
     border-radius: 50%;
     box-shadow: 0px 8px 16px 0px #a7a8ff;
+    transition: width 2s, height 2s, transform 2s;
   }
-
-footer {
-    margin-top: 69px;
-    width: 100%;
-}
-.rs {
-    text-align: right;
-       flex-grow: 1;
-       padding: 0.5px;
-       
-  }
-  .rs i {
-    display: inline-block;
-    padding: 20px 10px;
-    align-items: center;
-    
+  .cont-item img:hover {
+    box-shadow:6px 8px 9px rgb(28, 15, 87);
+    width: 500px;
+    height: 400px;
+    transform: rotate(360deg);
+   
   }
 
   button {
   transition-duration: 0.4s;
 	padding:6px 0 6px 0;
 	border-radius: 2rem;
-  border-bottom:5px solid #4753f3;
+  border-bottom:5px solid #4752f365;
   border-top:2px solid #13a8a7;
-  color:#114778;
+  color:rgb(19, 3, 3);
   font-size: large;
   font-weight: bolder;
 	background:#fff;
-	box-shadow:2px 2px 3px white;
+	box-shadow: white;
 	
   }
   button:hover {
@@ -170,14 +159,7 @@ footer {
     justify-content:flex-start;
     text-align: center;
   }
-  /*.rmq {
-    width: 600px;
-    height: 400px;
-    padding: 40px 20px 2px 20px;
-    background-color: #ffffff;
-    border-radius: 2rem;
-    opacity: 0.9;
-  }*/
+  
   p  {
     font-family: 'Raleway';
     line-height: 35px;
@@ -189,17 +171,17 @@ footer {
    .conct {
      display: inline-block;
      text-align: center;
-     color: white;
+     color: midnightblue;
      width: 500px;
      margin-top:50px ;
      font-size: 2rem;
-     opacity: 0.9;
-     background-color:#114778;
-     box-shadow: 0 4px 8px 0 #a9d9fc;
+     background-color:#a9d9fc6c;
+     box-shadow: 0 4px 8px 0 #4753f3;
+     border-radius: 22px;
 
    }
    .conct .ctt {
-     color: #fff;
+     color: rgb(19, 3, 3);
    }
   .context {
     display: flex;
@@ -210,7 +192,8 @@ footer {
   .cont-txt {
     width: 1200px;
     height: auto;
-    margin: 10px 40px;
+    
+    margin: 150px 40px;
     padding: 10px;
     background-color: white;
     text-align: justify;
@@ -227,8 +210,8 @@ footer {
     color:rgb(230, 251, 252);
     width: 1000px;
     height: auto;
-    border-bottom:7px solid #4753f3;
-    border-top:4px solid #13a8a7;
+    border-bottom:7px solid #4752f365;
+    border-top:4px solid #15c0c0;
     border-radius: 2rem;
     margin-left: auto;
     margin-right: auto;
@@ -246,19 +229,32 @@ footer {
   }
 
   @media only screen and (max-width: 1024px) {
-    .conct,  .containers, #main .cont-txt {
+    .containers, .cont-txt, .conct {
       width: 90% ;
+      height: auto;
       font-size: 16px;
     }
     .titre, h2, .ph {
       font-size: smaller;
     }
-    header input, .barre-d-r {
-      display: none;
-    
+    .barre-d-r {
+      width: auto;
     }
     
+   
   }
+
+  .rs {
+         padding-top: 16.5px;
+         background-color: #ffffffb2;  
+         margin-top: 69px;
+         width: 100%;
+         height: 80px;   
+         text-align: left;  
+    }
+  .tm {
+      text-align: right;
+    }
   
   /*menu flottant*/
 
@@ -293,16 +289,16 @@ footer {
 }
 
 .menu-flottant ul li:nth-child(1) { 
-    background-color: rgba(255, 68, 0, 0.342); 
+    background-color: rgba(255, 68, 0, 0.637); 
 } 
 .menu-flottant ul li:nth-child(2) { 
-	background-color: rgba(0, 0, 255, 0.336) ; 
+	background-color: rgba(0, 0, 255, 0.562) ; 
 } 
 .menu-flottant ul li:nth-child(3) { 
-	background-color: #4843d256; 
+	background-color: #4843d27e; 
 } 
 .menu-flottant ul li:nth-child(4) { 
-	background-color: rgba(255, 217, 0, 0.315); 
+	background-color: rgba(255, 217, 0, 0.61); 
 } 
 
 .menu-flottant ul li:hover {
