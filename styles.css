@@ -32,8 +32,6 @@
     margin: auto;
     width: 100%;
     background-color: rgba(220, 217, 233, 0.637);
-    background-position: center;
-    background-size: cover;
   }
 
   .flex-container {
@@ -70,7 +68,7 @@ header img {
   display: inline-block;
   margin: 18px 15px;
   color: rgb(19, 3, 3);
-  font-family:'calendas_plusregular' ;
+  font-family:'calendas_plusregular';
   font-weight: smaller;
   border-bottom:3px solid #4752f365;
 }
@@ -187,12 +185,10 @@ header img {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
   }
   .cont-txt {
     width: 1200px;
     height: auto;
-    
     margin: 150px 40px;
     padding: 10px;
     background-color: white;
@@ -204,20 +200,18 @@ header img {
     column-gap: 50px;
     column-rule: 2px solid midnightblue;
   }
-  .tp {
-    font-family: 'calendas_plusregular' sans-serif;
-    font-size: 3.5rem;
-    color:rgb(230, 251, 252);
-    width: 1000px;
-    height: auto;
-    border-bottom:7px solid #4752f365;
-    border-top:4px solid #15c0c0;
-    border-radius: 2rem;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 2rem;
-    text-transform: uppercase; 
-    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+
+   .tp {
+    font-size: 2.5rem;
+    color:rgb(255, 255, 255);
+    background-image: url("ffimg.jpg");
+    width: 100%;
+    height: 350px;
+    background-size: cover;
+    padding-top: 210px;
+    text-transform: capitalize;
+    text-shadow: 2px 3px #4752f365;
+    
   }
   .titre, h2, .ph {
     color: midnightblue;

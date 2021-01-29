@@ -13,55 +13,53 @@
          <link rel="stylesheet" 
          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" />
          
-        <meta name="viewport" content="width= 1024px, initial-scale=1.0">
-
     </head>
     <body>
-        <header>
+        <header role="banniere" >
             <div class="flex-container">
-            <img src="logo png.png  11.png" alt="">
-            <div class="barre-d-r">
+           <a href="index.html"><img src="logo png.png  11.png" alt="Mon site (logo)"></a> 
+            <div class="barre-d-r" role="search">
             <form> 
                 <input type="search" name="barre de recherce" placeholder="Search..">
                 <i class="fa fa-search"></i>
             </form>
             </div>
             <div class="navbar">
-            <nav>
+            <nav role="navigation">
                 <ul>
                     <li><a href="index.html">Accueil</a></li>
-                    <li><a href="#footer">À propos</a></li>
+                    <li><a href="#footer">A propos</a></li>
                    <li><a href="#contact">Contact</a></li>
                 </ul>
               </nav>
             </div>
             </div>
         </header>
-        <main>
+        <main role="main">
         <div id="main_princ">
             <div class="containers">
-                <h1 class="tp">Les principaux langages web et leurs rôles</h1>
+                <span class="tp">Les principaux langages web<br> et leurs rôles</span>
                 <div class="cont-item">
-                    <a href="html.html"><img src="html-5-.jpg" alt=""></a> 
+                    <a href="html.html"><img src="html-5-.jpg" alt="Image html"></a> 
                     <a href="html.html"><button>Affichage du contenu d’une page Internet</button></a>                   
                 </div>
                 <div class="cont-item">
-                    <a href="css.html"><img src="cssn.jpg" alt=""></a>
+                    <a href="css.html"><img src="cssn.jpg" alt="Image css"></a>
                     <a href="css.html"><button>Mise en forme du contenu  d’une page Internet(mise en page)</button></a>
                 </div>
                 <div class="cont-item">
-                    <a href="php.html"><img src="php-l.jpg" alt=""></a>
+                    <a href="php.html"><img src="php-l.jpg" alt="Image php"></a>
                     <a href="php.html"><button>Interaction – Animation sur une page Web</button></a> 
                 </div>
                 <div class="cont-item">
-                    <a href="javascript.html"><img src="java-light.jpg" alt=""></a>
-                    <a href="javascript.html"><button> Création de pages dynamiques et sécurité des données</button></a> 
+                    <a href="javascript.html"><img src="java-light.jpg" alt="Image javascript"></a>
+                    <a href="javascript.html"><button role="button"> Création de pages dynamiques et sécurité des données</button></a> 
                 </div>
             </div>
         </main>
         </div>
                                          <!--section contact-->
- <div class="conct" id="contact">
+ <div class="conct" id="contact" aria-label="contacts">
  <h3 class="ctt">CONTACT</h3>
     <p class="ctt" ><i class= "fa fa-map-marker fa-1x"></i> Paris, France</p>
     <p class="ctt"><i class= "fa fa-phone fa-1x"></i> Phone: +33 6-10-948-774</p>
@@ -79,7 +77,7 @@
         </p>
          </form>
 </div>
-        <footer>
+        <footer role="contentinfo">
            <div class="rs">
                <span>Follow Us</span>
                <i class="fab fa-facebook  fa-2x"></i>
